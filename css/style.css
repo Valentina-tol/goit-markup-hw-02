@@ -21,6 +21,19 @@ ol {
 a {
   text-decoration: none;
 }
+
+/* Utilities */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  overflow: hidden;
+  white-space: nowrap;
+}
 /* #region Header */
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -100,7 +113,7 @@ a {
 /* #endregion */
 
 /* #region Features-title */
-.features-title {
+.feature-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -108,7 +121,7 @@ a {
   color: #2e2f42;
 }
 
-.features-text {
+.feature-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -118,13 +131,27 @@ a {
 /* #endregion */
 
 /* #region Our team */
+.team-section {
+  background-color: #f4f4fd;
+}
+
 .team-title {
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
+  line-height: 1.11;
   text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
   color: #2e2f42;
+  font-weight: 700;
+}
+.team-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.team-card {
+  background-color: #ffffff; /* білий фон елемента */
 }
 
 .team-name {
@@ -134,14 +161,16 @@ a {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
+  margin: 0;
 }
+
 .team-role {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #434455;
+  text-align: center;
+  margin: 0;
 }
 /* #endregion */
 
@@ -153,8 +182,8 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: #2E2F42;    
-  margin: 0;          
+  color: #2e2f42;
+  margin: 0;
 }
 
 .work-title {
@@ -163,7 +192,7 @@ a {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin: 0;          
+  margin: 0;
 }
 
 .work-text {
@@ -171,7 +200,7 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  margin: 0;          /* опционально */
+  margin: 0; /* опционально */
 }
 /* #endregion */
 
