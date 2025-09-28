@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: Roboto, sans-serif;
   color: #434455;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 
 ul,
@@ -34,6 +34,7 @@ a {
   overflow: hidden;
   white-space: nowrap;
 }
+
 /* #region Header */
 .logo {
   font-family: 'Raleway', sans-serif;
